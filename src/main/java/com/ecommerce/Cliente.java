@@ -1,11 +1,16 @@
 package com.ecommerce;
 
+import java.util.List;
+
 public class Cliente {
     private int id;
     private String nome;
     private String telefone;
     private String endereco;
+    static List<Cliente> clientes;
+     
 
+    
     public int getId() {
         return this.id;
     }
@@ -26,7 +31,7 @@ public class Cliente {
         return this.telefone;
     }
 
-    public void setteTefone(String telefone) {
+    public void setTelefone(String telefone) {
         this.telefone = telefone;
 
     }

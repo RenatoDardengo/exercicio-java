@@ -7,10 +7,10 @@ import java.util.List;
 public class Pedido {
 
     private int id;
-    private String cliente;
-    private List<String> produtos;
+    private String cliente;             //Não é array, pois 1 pedido só pode ter 1 cliente (1 objeto cliente).
+    private List<String> produtos;      // É array, pois 1 pedido pode ter vários produtos
     private double valorTotal;
-
+    
     public int getId() {
         return id;
     }
